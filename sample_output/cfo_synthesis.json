@@ -1,0 +1,88 @@
+{
+  "asOfDate": "September 02, 2026 13:35",
+  "audience": "owner (this reaches one person; they decide what, if anything, goes further)",
+  "summary": [
+    "Trailing GMROI 4.28x; $7,600.00 in dead stock (1 categories).",
+    "Conservative-case cash forecast ends the window at $60,874.15; weekly ordering ceiling $1,423.26.",
+    "$18,420.35 outstanding on vendor terms.",
+    "Short-term financing balance $9,200.00 remaining."
+  ],
+  "needsAttention": [
+    {
+      "severity": "WARNING",
+      "title": "Trapped Capital in Dead Stock",
+      "metric": "$7,600.00",
+      "description": "1 category has generated $0 in sales this window, holding $7,600.00 in working capital.",
+      "worth_considering": "A targeted clearance or bundling pass on these categories would free up cash currently sitting on shelves."
+    }
+  ],
+  "capitalEfficiency": [
+    {
+      "severity": "WARNING",
+      "title": "Trapped Capital in Dead Stock",
+      "metric": "$7,600.00",
+      "description": "1 category has generated $0 in sales this window, holding $7,600.00 in working capital.",
+      "worth_considering": "A targeted clearance or bundling pass on these categories would free up cash currently sitting on shelves."
+    },
+    {
+      "severity": "OPTIMAL",
+      "title": "Strong Inventory Return (GMROI)",
+      "metric": "4.28x",
+      "description": "Annualized Gross Margin Return on Inventory is 4.28x.",
+      "worth_considering": "Current reorder buffer sizes for top-tier categories appear to be working -- no change indicated."
+    }
+  ],
+  "cashDebtAndTerms": [
+    {
+      "severity": "OPTIMAL",
+      "title": "Cash Forecast (Conservative Case)",
+      "metric": "$60,874.15",
+      "description": "Projected cash at the end of the 6-month forecast window, conservative case (base case: $64,337.23).",
+      "worth_considering": null
+    },
+    {
+      "severity": "INFO",
+      "title": "Weekly Ordering Allowance",
+      "metric": "$1,423.26/wk",
+      "description": "Recommended inventory spend ceiling for this week, based on seasonal revenue weighting: $1,423.26.",
+      "worth_considering": "Applies across all vendors combined, not per-vendor."
+    },
+    {
+      "severity": "INFO",
+      "title": "Vendor Accounts Payable Outstanding",
+      "metric": "$18,420.35",
+      "description": "Total open balance on vendor net-terms invoices.",
+      "worth_considering": null
+    },
+    {
+      "severity": "INFO",
+      "title": "Short-Term Financing Payoff",
+      "metric": "$9,200.00",
+      "description": "Remaining balance on short-term financing, servicing at $385.50/week.",
+      "worth_considering": "Factor the weekly auto-debit into cash buffer before placing large open-account vendor orders."
+    }
+  ],
+  "patternsWorthALook": [
+    {
+      "severity": "INFO",
+      "title": "Statistical Lead: LAB-WAGES ↔ OCC-UTILITIES",
+      "metric": "r=+0.99 (n=18 months)",
+      "description": "LAB-WAGES (Staff Wages) vs OCC-UTILITIES (Utilities), same period",
+      "worth_considering": "Found by scanning 180 category-pair/lag combinations across 18 months of ledger history -- correlation, not proven causation, and a small sample besides. Worth a look if it keeps showing up on future refreshes, not something to act on from one run."
+    },
+    {
+      "severity": "INFO",
+      "title": "Statistical Lead: INV-PURCHASES ↔ OCC-UTILITIES",
+      "metric": "r=+0.83 (n=18 months)",
+      "description": "INV-PURCHASES (Inventory Purchases) vs OCC-UTILITIES (Utilities), same period",
+      "worth_considering": "Found by scanning 180 category-pair/lag combinations across 18 months of ledger history -- correlation, not proven causation, and a small sample besides. Worth a look if it keeps showing up on future refreshes, not something to act on from one run."
+    },
+    {
+      "severity": "INFO",
+      "title": "Statistical Lead: INV-PURCHASES ↔ LAB-WAGES",
+      "metric": "r=+0.80 (n=18 months)",
+      "description": "INV-PURCHASES (Inventory Purchases) vs LAB-WAGES (Staff Wages), same period",
+      "worth_considering": "Found by scanning 180 category-pair/lag combinations across 18 months of ledger history -- correlation, not proven causation, and a small sample besides. Worth a look if it keeps showing up on future refreshes, not something to act on from one run."
+    }
+  ]
+}
