@@ -1,0 +1,52 @@
+{
+  "asOfDate": "September 02, 2026 13:35",
+  "audience": "owner (this reaches one person; they decide what, if anything, goes further)",
+  "summary": [
+    "Stockout rate 5.2% (34 SKUs).",
+    "Discounting at 11.0% of revenue.",
+    "Scheduled labor at 1.41x traffic-implied baseline."
+  ],
+  "needsAttention": [
+    {
+      "severity": "WARNING",
+      "title": "Stockout Rate",
+      "metric": "5.2%",
+      "description": "34 SKUs hit zero on-hand at some point this window (5.2% of tracked SKU-days).",
+      "worth_considering": "Reorder points for these specific SKUs may be set below actual sell-through velocity."
+    },
+    {
+      "severity": "WARNING",
+      "title": "Scheduled Labor vs. Foot Traffic",
+      "metric": "1.41x baseline",
+      "description": "Scheduled labor hours are running 1.41x what trailing foot-traffic patterns would suggest.",
+      "worth_considering": "Worth a look at whether the schedule reflects last season's traffic rather than the current one."
+    }
+  ],
+  "inventoryAndReorder": [
+    {
+      "severity": "WARNING",
+      "title": "Stockout Rate",
+      "metric": "5.2%",
+      "description": "34 SKUs hit zero on-hand at some point this window (5.2% of tracked SKU-days).",
+      "worth_considering": "Reorder points for these specific SKUs may be set below actual sell-through velocity."
+    }
+  ],
+  "pricingHealth": [
+    {
+      "severity": "OPTIMAL",
+      "title": "Discount Rate",
+      "metric": "11.0% of revenue",
+      "description": "Discounts and markdowns totaled 11.0% of gross revenue this window.",
+      "worth_considering": null
+    }
+  ],
+  "staffingAndTraffic": [
+    {
+      "severity": "WARNING",
+      "title": "Scheduled Labor vs. Foot Traffic",
+      "metric": "1.41x baseline",
+      "description": "Scheduled labor hours are running 1.41x what trailing foot-traffic patterns would suggest.",
+      "worth_considering": "Worth a look at whether the schedule reflects last season's traffic rather than the current one."
+    }
+  ]
+}
